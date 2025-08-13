@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { supabase } from '../config/supabase.js';
+import { requireAuth } from '../middleware/requireAuth.js';
 
 const router = Router();
 
@@ -38,5 +39,15 @@ router.post('/login', async (req, res) => {
 });
 
 export default router;
+
+// Extra Day 2 helpers
+router.post('/logout', requireAuth, async (_req, res) => {
+  // With Supabase tokens managed client-side, logout is a no-op on backend
+  return res.json({ success: true });
+});
+
+router.get('/me', requireAuth, async (req, res) => {
+  return res.json({ user: req.user });
+});
 
 
