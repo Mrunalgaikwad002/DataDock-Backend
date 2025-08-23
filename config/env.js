@@ -7,7 +7,7 @@ dotenv.config();
 export const PORT = Number(process.env.PORT) || 3000;
 export const SUPABASE_URL = process.env.SUPABASE_URL || '';
 export const SUPABASE_KEY = process.env.SUPABASE_KEY || '';
-export const SUPABASE_BUCKET = process.env.SUPABASE_BUCKET || 'my-bucket';
+export const SUPABASE_BUCKET = process.env.SUPABASE_BUCKET || 'files';
 
 // Warn if required variables are missing (non-fatal, matches current behavior)
 const requiredEnv = ['SUPABASE_URL', 'SUPABASE_KEY'];

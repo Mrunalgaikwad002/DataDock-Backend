@@ -13,14 +13,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Mount externalized routes (endpoints unchanged)
-app.use(authRoutes);
-app.use(dbRoutes);
-app.use(storageRoutes);
-app.use(foldersRoutes);
-app.use(filesRoutes);
-app.use(shareRoutes);
-app.use(searchRoutes);
+// Mount externalized routes with proper prefixes
+app.use('/auth', authRoutes);
+app.use('/db', dbRoutes);
+app.use('/storage', storageRoutes);
+app.use('/folders', foldersRoutes);
+app.use('/files', filesRoutes);
+app.use('/share', shareRoutes);
+app.use('/search', searchRoutes);
 
 app.get("/", (req, res) => {
   res.send("Welcome to the Supabase Demo API!");
