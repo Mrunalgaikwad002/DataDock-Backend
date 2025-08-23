@@ -480,19 +480,6 @@ npm test
 npm run test:coverage
 ```
 
-### API Testing
-Use tools like Postman or curl to test endpoints:
-
-```bash
-# Health check
-curl https://datadock-backend.onrender.com/db/health
-
-# Test authentication
-curl -X POST https://datadock-backend.onrender.com/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"email":"test@example.com","password":"password"}'
-```
-
 ## 📞 Support
 
 For issues and questions:
