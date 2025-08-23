@@ -23,7 +23,7 @@ app.use('/share', shareRoutes);
 app.use('/search', searchRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the Supabase Demo API!");
+  res.send("Welcome to the DataDock API!");
 });
 
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
