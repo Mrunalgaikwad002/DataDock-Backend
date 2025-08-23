@@ -187,7 +187,7 @@ A robust Node.js backend API for the DataDock file management system, built with
 | `PORT` | Server port | `your port number` |
 | `NODE_ENV` | Environment | `development` |
 | `SUPABASE_URL` | Supabase project URL | `https://xxx.supabase.co` |
-| `SUPABASE_KEY` | Supabase anon key | `eyJ...` |
+| `SUPABASE_KEY` | Supabase service key | `use service key` |
 | `SUPABASE_BUCKET` | Storage bucket name | `supabase bucket name` |
 | `JWT_SECRET` | JWT signing secret | `your-secret-key` |
 | `JWT_EXPIRES_IN` | Token expiration | `your expiry time` |
